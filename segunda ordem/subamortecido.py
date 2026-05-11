@@ -1,5 +1,20 @@
 import math
 
+"""
+Tempo de subida Tr: tempo para a curva ir de 0,1 até 0,9 do valor final.
+
+Instante de pico Tp: tempo necessário para alcançar o primeiro picou ou pico máximo.
+
+Ultrapassagem percentual %UP: valor pleo qual a forma de onda ultrapassa o valor em regime permanente
+                              ou valor final no instante de pico
+                              
+Tempo de acomodação Ts: trabalhar dentro de uma faixa de +- 2% em torno do seu valor em regime permanente
+
+"""
+
+
+
+
 class SegundaClasseSubamortecido:
     def __init__(self, wn, zeta=None, up_percentual=None):
         """
@@ -48,7 +63,7 @@ class SegundaClasseSubamortecido:
 
     def __str__(self):
         """Exibe um resumo completo do sistema"""
-        
+
         return (
             f"=== Sistema Subamortecido ===\n"
             f"Parâmetros: Wn = {self.wn:.2f} rad/s, Zeta = {self.zeta:.4f}\n"
