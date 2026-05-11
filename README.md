@@ -20,5 +20,6 @@ venv\Scripts\activate # linux e mac: source venv/bin/activate
 
 pip install -r requirements.txt
 
-python main.py # linux e mac: python3 main.py
+python forma_geral.py # linux e mac: python3 forma_geral.py
+python subamortecido.py # linux e mac: python3 subamortecido.py
 ```
